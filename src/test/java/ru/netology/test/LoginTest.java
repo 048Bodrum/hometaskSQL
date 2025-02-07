@@ -38,7 +38,7 @@ public class LoginTest {
     }
 
     @Test
-    @DisplayName("Shouldget error notification if user is not exist in base")
+    @DisplayName("Should get error notification if user is not exist in base")
     void shouldGetErrorNotificationIfLoginWithRandomUserWithoutAddingToBase() {
         var authInfo = DataHelper.generateRandomUser();
         loginPage.login(authInfo);
