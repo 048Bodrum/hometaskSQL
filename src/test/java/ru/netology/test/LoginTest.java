@@ -31,7 +31,7 @@ public class LoginTest {
 
     @Test
     @DisplayName("Sould succesfully login to dashboard with exist login and password from sut test data")
-    void shouldSuccesfulLogin() {
+    void shouldSuccessfulLogin() {
         var verificationPage = loginPage.validLogin(authInfo);
         var verificationCode = SQLHelper.getVerificationCode();
         verificationPage.validVerify(verificationCode);
